@@ -1,0 +1,82 @@
+.Testimonials {
+  margin-bottom: 250px;
+  height: fit-content;
+  .sub-head {
+    font-family: Ubuntu Mono;
+    &::before {
+      content: '"';
+    }
+    &::after {
+      content: '"';
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #191919;
+    justify-content: center;
+    margin: 100px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .carousel {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .carousel__slide {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    p {
+      color: white;
+      max-width: 700px;
+      width: 100%;
+    }
+    .Author {
+      font-family: Almarai;
+      font-size: 36px;
+      font-weight: 400;
+      color: #00fff0;
+    }
+  }
+  .carousel__icon {
+    width: 48px;
+    height: 48px;
+    color: #00fff0;
+  }
+  .underlay-container {
+    display: flex;
+    justify-content: center;
+  }
+  .underlay {
+    margin-right: 50px;
+    position: absolute;
+    margin-top: -525px;
+    margin-left: 10px;
+    z-index: -1;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: rgba(0, 231, 218, 1) 5px 5px, rgba(0, 231, 218, 0.3) 10px 10px,
+      rgba(0, 231, 218, 0.2) 15px 15px, rgba(0, 231, 218, 0.1) 20px 20px,
+      rgba(0, 231, 218, 0.05) 25px 25px;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+
+    @-webkit-keyframes mover {
+      0% {
+        transform: translateY(100);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+    @keyframes mover {
+      0% {
+        transform: translateY(100);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.Footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  @media screen and (max-width: 1170px) {
+    flex-wrap: wrap;
+  }
+  &:before {
+    @include full-bleed();
+    position: absolute;
+    background: white;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    top: 0;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .headline {
+      font-family: Ubuntu Mono;
+      font-size: 60px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    ul {
+      margin-left: -35px;
+      margin-top: 35px;
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      li {
+        font-family: Ubuntu Mono;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 35px;
+    img {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .form-container {
+    .headline {
+      font-family: Almarai;
+      font-size: 50px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .subtext {
+      margin: 0;
+      font-size: 16px;
+      font-family: Almarai;
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+}

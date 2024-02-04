@@ -1,0 +1,127 @@
+html {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+p {
+  color: black;
+  font-family: Almarai;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-text {
+  color: #fff;
+  font-family: "Ubuntu Mono";
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  @media screen and (max-width: 750px) {
+    font-size: 150px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 125px;
+  }
+}
+
+.sub-head {
+  color: #fff;
+  font-family: "Ubuntu Mono";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  &::after {
+    content: "/";
+    color: #00fff0;
+    font-family: "Ubuntu Mono";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 20px;
+  }
+  &::before {
+    content: "/";
+    color: #00fff0;
+    font-family: "Ubuntu Mono";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 40px;
+  }
+}
+
+.dark {
+  color: black;
+}
+
+//BUTTONS STYLING
+
+.btn-1 {
+  padding: 20px 42px;
+  background-color: black;
+  color: white;
+  font-family: Almarai;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  outline: black 2px solid;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+    color: black;
+    transition: color background-color 0.5s ease-in-out;
+  }
+}
+
+.btn-2 {
+  padding: 20px 42px;
+  background-color: white;
+  color: black;
+  font-family: Almarai;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  outline: white 2px solid;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+}
+//MIX-INS
+@mixin full-bleed() {
+  width: 100vw;
+  max-width: unset;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: 0;
+}
