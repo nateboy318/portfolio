@@ -17,7 +17,6 @@ import Test from "./components/Test.vue";
     <Skills />
     <!-- <Wave style="transform: rotateX(180deg); margin: -200px" /> -->
     <Portfolio />
-    <Test />
     <Testimonials />
 
     <Footer />
