@@ -6,7 +6,6 @@ import Skills from "./components/Skills.vue";
 import Portfolio from "./components/Portfolio.vue";
 import Testimonials from "./components/Testimonials.vue";
 import Footer from "./components/Footer.vue";
-import Test from "./components/Test.vue";
 </script>
 
 <template>
