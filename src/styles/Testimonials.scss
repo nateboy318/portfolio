@@ -1,6 +1,9 @@
 .Testimonials {
-  margin-bottom: 250px;
+  margin-bottom: 300px;
+  margin-top: 100px;
   height: fit-content;
+  display: flex;
+  justify-content: center;
   .sub-head {
     font-family: Ubuntu Mono;
     &::before {
@@ -15,9 +18,9 @@
     flex-wrap: wrap;
     background-color: #191919;
     justify-content: center;
-    margin: 100px;
     max-width: 1200px;
     width: 100%;
+    margin: 100px;
   }
   .carousel {
     width: 100%;
@@ -46,13 +49,13 @@
   }
   .underlay-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .underlay {
-    margin-right: 50px;
     position: absolute;
-    margin-top: -525px;
-    margin-left: 10px;
+    margin-top: 170px;
+
+    margin-right: 0;
     z-index: -1;
     width: 100%;
     max-width: 1200px;
